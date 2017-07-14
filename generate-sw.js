@@ -1,4 +1,4 @@
-const workboxBuild = require('workbox-build');
+const workboxBuild = require('workbox-build')
 
 workboxBuild.injectManifest({
   swSrc: 'public/service-worker.js',
@@ -7,5 +7,5 @@ workboxBuild.injectManifest({
   staticFileGlobs: ['**/!(*map*)'],
   globIgnores: ['**/service-worker.js'],
 }).then(() => {
-  console.log('The production service worker has been generated.');
-});
+  console.log('The production service worker has been generated.')
+})
